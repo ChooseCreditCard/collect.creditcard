@@ -4,308 +4,280 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <title>Collect.Creditcard – Billing, Repayments & Debt Collection</title>
-  <meta name="description"
-        content="Collect.creditcard explains how card repayments, billing cycles, collections and debt recovery work – from monthly statements and autopay to delinquency, collectors and charge-offs." />
+  <title>Collect.Creditcard – How to Collect Points & Miles With Credit Cards</title>
+  <meta name="description" content="Learn how to collect points and miles with credit cards: everyday spend, bonus categories, partner earning and how different loyalty cards work together." />
   <meta name="robots" content="index,follow" />
   <link rel="canonical" href="https://collect.creditcard/" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Collect.Creditcard – Billing, Repayments & Debt Collection" />
-  <meta property="og:description"
-        content="From monthly statements and autopay to late fees, debt collectors and charge-offs – understand how card repayments and collections really work." />
+  <meta property="og:title" content="Collect.Creditcard – Collecting Points & Miles Explained" />
+  <meta property="og:description" content="Independent explainer of how to collect points and miles with loyalty and co-branded credit cards, and how to combine multiple programmes." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://collect.creditcard/" />
-  <meta property="og:image" content="https://collect.creditcard/preview.png" />
+  <meta property="og:image" content="https://choose.creditcard/preview.png?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=og_image" />
 
-  <!-- Styles -->
-  <link rel="stylesheet" href="/styles.css" />
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Collect.Creditcard – How to Collect Points & Miles" />
+  <meta name="twitter:description" content="Learn how to use credit cards to collect points and miles efficiently across airline, hotel and bank loyalty programmes." />
+  <meta name="twitter:image" content="https://choose.creditcard/preview.png?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=twitter_image" />
 
   <!-- GA4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-64FE63JQ3H"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
+    function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config','G-64FE63JQ3H');
+    gtag('config', 'G-64FE63JQ3H');
   </script>
+
+  <!-- Tailwind for utility classes -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Shared minisite styles -->
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body class="bg-slate-950 text-slate-100">
-
-  <!-- HEADER – unified CC -->
   <header class="site-header">
     <div class="nav-inner max-w-6xl">
       <div class="brand">
         <div class="cc-logo">CC</div>
         <div class="brand-text">
-          <span class="brand-title">Collect.creditcard</span>
-          <span class="brand-subtitle">Billing · Repayments · Collections</span>
+          <div class="brand-title">Collect.Creditcard</div>
+          <div class="brand-subtitle">Collecting Points & Miles With Cards</div>
         </div>
       </div>
-
-      <nav class="nav-links">
-        <a href="https://fin.creditcard/">Collection</a>
-        <a href="https://tech.creditcard/">Tech</a>
-        <a href="https://choose.creditcard/">Choose</a>
+      <nav class="nav-links" aria-label="Page navigation">
+        <a href="#overview">Overview</a>
+        <a href="#mechanics">How It Works</a>
+        <a href="#compare">Compare</a>
       </nav>
     </div>
   </header>
 
   <main class="cc-page">
-
     <!-- Breadcrumb -->
-    <p class="cc-breadcrumb">Collect.creditcard · Billing · Repayments · Collections</p>
-
-    <!-- HERO -->
-    <section class="hero">
-      <h1>How Credit-Card Repayments & Collections Actually Work</h1>
-      <p class="hero-lead">
-        Collect.creditcard breaks down what happens after you spend: statements, due dates, minimum
-        payments, late fees and – if things go wrong – how debt collection and charge-offs work in
-        the card ecosystem.
-      </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=collect_top">
-        Compare Cards with Fair Fees & Clear Repayment Terms
+    <div class="cc-breadcrumb">
+      <a href="https://choose.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=breadcrumb">
+        Home
       </a>
-    </section>
+      &nbsp;›&nbsp;
+      Collect.Creditcard
+    </div>
 
-    <!-- What is “collection” in card terms? -->
-    <section class="section">
-      <h2>What does “collection” mean for credit cards?</h2>
-      <p class="small">
-        In card payments, “collection” is everything that happens when the bank tries to get the money back
-        after you spend: regular monthly payments, minimum amounts, interest, and – if payments stop –
-        reminders, late fees and debt-collection processes.
-      </p>
-      <ul class="list">
-        <li><strong>Billing</strong> – generating your monthly statement and calculating what you owe.</li>
-        <li><strong>Repayment</strong> – collecting at least the minimum due by the due date.</li>
-        <li><strong>Delinquency</strong> – when payments are late or missed for a period of time.</li>
-        <li><strong>Collections</strong> – structured efforts to recover overdue debt, often via specialist teams or agencies.</li>
-        <li><strong>Charge-off</strong> – when a bank moves long-overdue debt off its active books (but you can still owe it).</li>
-      </ul>
-      <p class="small">
-        Understanding the collection side of cards is key to avoiding unnecessary fees, protecting your
-        credit profile and staying in control if life events disrupt your income.
-      </p>
-    </section>
-
-    <!-- How it works -->
-    <section class="section">
-      <h2>How card billing & collections work step by step</h2>
-      <p class="small">
-        While details vary by issuer and country, most card billing and collection flows look roughly like this:
-      </p>
-      <ul class="list">
-        <li><strong>1. Statement period closes</strong> – all transactions in the cycle are summed, plus fees and interest.</li>
-        <li><strong>2. Statement is issued</strong> – you receive a statement with:
-          <ul class="list">
-            <li>Statement balance</li>
-            <li>Minimum payment due</li>
-            <li>Payment due date</li>
-          </ul>
-        </li>
-        <li><strong>3. Grace period</strong> – if you pay the full balance by the due date, you often avoid interest on new purchases.</li>
-        <li><strong>4. Minimum payment</strong> – paying only the minimum avoids immediate default, but keeps you in debt longer
-          and generates interest.</li>
-        <li><strong>5. Late or missed payment</strong> – triggers late fees, possible penalty interest and negative credit reporting.</li>
-        <li><strong>6. Early-stage collections</strong> – reminders via SMS, email, app, calls; offers to set up payment plans.</li>
-        <li><strong>7. Advanced collections</strong> – after repeated non-payment, accounts can move to internal or external
-          collection teams.</li>
-        <li><strong>8. Charge-off &amp; legal actions</strong> – in long-term non-payment, debt may be written off, sold or pursued legally.</li>
-      </ul>
-      <p class="small">
-        Many problems can be softened or avoided by contacting the issuer early, before an account moves
-        deeper into the collection pipeline.
-      </p>
-    </section>
-
-    <!-- Types / models -->
-    <section class="section">
-      <h2>Common collection & repayment models</h2>
-      <p class="small">
-        Card products can handle collection and repayment in different ways. Some models are more flexible
-        and user-friendly than others:
-      </p>
-
-      <div class="cluster-grid">
-        <div class="cluster-card">
-          <h3>Standard revolving credit</h3>
-          <p class="small">
-            Classic credit-card model: you can carry a balance, pay a minimum each month and pay interest on
-            the remaining amount. Flexible but risky if balances keep growing.
-          </p>
-        </div>
-
-        <div class="cluster-card">
-          <h3>Charge cards &amp; pay-in-full</h3>
-          <p class="small">
-            Requires full payment each month, with no option to revolve. Less interest risk, but strict
-            collection if payments are missed.
-          </p>
-        </div>
-
-        <div class="cluster-card">
-          <h3>Autopay &amp; smart repayment tools</h3>
-          <p class="small">
-            Automatic collection of at least the minimum – or full balance – from a bank account. Reduces
-            late payments but requires careful cash-flow planning.
-          </p>
-        </div>
-
-        <div class="cluster-card">
-          <h3>Installment &amp; “buy now, pay later” plans</h3>
-          <p class="small">
-            Some cards let you convert purchases or balances into fixed installments with a clear end date.
-            Helpful if fees and rates are transparent and reasonable.
-          </p>
-        </div>
-
-        <div class="cluster-card">
-          <h3>Hardship &amp; relief programs</h3>
-          <p class="small">
-            In cases of job loss, illness or crisis, issuers may offer temporary reduced payments, paused
-            interest or structured repayment plans.
-          </p>
-        </div>
-
-        <div class="cluster-card">
-          <h3>External debt collection &amp; sale</h3>
-          <p class="small">
-            Long-overdue accounts may be transferred or sold to external collection agencies, adding new
-            dynamics, contacts and sometimes extra costs.
-          </p>
-        </div>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>How to Collect Points & Miles Through Everyday Card Spend</h1>
+        <p class="hero-lead">
+          Collect.Creditcard explains how loyalty and co-branded credit cards turn normal purchases into points and
+          miles – and how to structure your wallet so collecting feels deliberate, not random.
+        </p>
+        <a class="cta"
+           href="https://choose.creditcard/loyalty/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=hero_cta">
+          Explore the Loyalty hub on Choose.Creditcard
+        </a>
       </div>
     </section>
 
-    <!-- Fees / Risks / Limits -->
-    <section class="section">
-      <h2>Fees, risks &amp; limits in billing and collections</h2>
-      <p class="small">
-        The collection side of cards concentrates many of the risks that harm cardholders if they are not
-        managed carefully. This overview shows the main pressure points:
+    <!-- Overview -->
+    <section id="overview" class="section">
+      <h2>What Does It Mean to “Collect” With a Credit Card?</h2>
+      <p>
+        When people talk about “collecting points” with a card, they usually mean earning a loyalty currency – airline
+        miles, hotel points or flexible bank points – on top of the underlying payment. The card becomes a bridge between
+        everyday spend and long-term rewards like flights, nights or upgrades.
       </p>
+      <p>
+        Programmes differ in how they credit points, which currencies they use and how valuable those points are in real
+        use. Collecting is less about chasing the biggest number and more about matching earning to a programme you
+        actually plan to redeem with.
+      </p>
+    </section>
 
+    <!-- Mechanics -->
+    <section id="mechanics" class="section">
+      <h2>How Points & Miles Are Collected on Card Spend</h2>
+      <p>
+        Each transaction you make is tagged with a merchant category and amount. The card’s reward engine uses this to
+        decide how many points to add to your balance – for example, 3x on travel, 2x on dining and 1x on everything
+        else.
+      </p>
+      <p>
+        Co-branded cards usually send points directly into a partner programme (an airline or hotel), while bank rewards
+        cards keep points in a bank currency that can later be transferred or redeemed in multiple ways. Both models can
+        suit collectors, but they behave differently when programmes change or travel plans shift.
+      </p>
+    </section>
+
+    <!-- Strategies -->
+    <section class="section">
+      <h2>Basic Strategies for Collecting More Effectively</h2>
+      <p>
+        Collecting more is not only about spending more. Three common strategies are:
+      </p>
+      <ul class="list">
+        <li>• <strong>Align spend with multipliers:</strong> use the right card for categories with higher earning rates.</li>
+        <li>• <strong>Concentrate on a few ecosystems:</strong> avoid scattering points across many minor balances.</li>
+        <li>• <strong>Combine travel and everyday spend:</strong> pair flight or hotel activity with card earning.</li>
+      </ul>
+      <p>
+        Going beyond this often means monitoring limited-time bonuses, partner offers and seasonal promotions – useful,
+        but only if they fit into travel plans you would make anyway.
+      </p>
+    </section>
+
+    <!-- Risks & limits -->
+    <section class="section">
+      <h2>Limits, Expiry and When Collecting Backfires</h2>
+      <p>
+        Points and miles are not savings accounts. Programmes may devalue charts, raise redemption rates or add new
+        surcharges over time. Some currencies expire if there is no activity within a set period, which can quietly erode
+        balances for low-frequency collectors.
+      </p>
+      <p>
+        Collecting purely for the sake of collecting – spending more than needed just to hit a bonus – can quickly offset
+        any notional gain. A useful test is whether you would still be comfortable with the purchase if no points were
+        awarded at all.
+      </p>
+    </section>
+
+    <!-- Credit & issuer perspective -->
+    <section class="section">
+      <h2>How Issuers and Programmes View Heavy Collectors</h2>
+      <p>
+        From the issuer side, active collectors can be attractive if they pay on time and use the card across a wide
+        range of merchants. For loyalty programmes, card-based earning deepens engagement and often represents a major
+        revenue stream.
+      </p>
+      <p>
+        At the same time, both issuer and programme track behaviour: patterns of manufactured spend, unusual refund
+        activity or attempts to cycle limits may breach terms and lead to restrictions or account actions.
+      </p>
+    </section>
+
+    <!-- Comparison table -->
+    <section id="compare" class="section">
+      <h2>Comparing Cards for Point & Mile Collectors</h2>
       <div class="table-wrap">
         <table class="table">
           <thead>
-          <tr>
-            <th>Area</th>
-            <th>How it shows up</th>
-            <th>What to watch</th>
-          </tr>
+            <tr>
+              <th>Aspect</th>
+              <th>What to Check</th>
+              <th>Why It Matters</th>
+            </tr>
           </thead>
           <tbody>
-          <tr>
-            <td>Late payment fees</td>
-            <td>Fixed charges applied if payment is received after the due date.</td>
-            <td>Fee amount, how soon it triggers, whether multiple fees can apply in a row.</td>
-          </tr>
-          <tr>
-            <td>Penalty interest rates</td>
-            <td>Higher APR applied after serious or repeated delinquency.</td>
-            <td>Conditions for penalty rates, how long they last, options to revert to normal.</td>
-          </tr>
-          <tr>
-            <td>Minimum payment traps</td>
-            <td>Paying only the minimum keeps accounts “current” but debt barely shrinks.</td>
-            <td>Minimum % or formula, time to repay at minimum, total interest cost.</td>
-          </tr>
-          <tr>
-            <td>Credit-score impact</td>
-            <td>Late payments and high utilisation affect credit reports and scores.</td>
-            <td>When late payments are reported, how severe the impact is, options for correction.</td>
-          </tr>
-          <tr>
-            <td>Collections &amp; legal action</td>
-            <td>Escalation to collectors, court claims, wage garnishment (depending on jurisdiction).</td>
-            <td>Rights and obligations, communication channels, ability to negotiate or settle.</td>
-          </tr>
-          <tr>
-            <td>Fees on repayment tools</td>
-            <td>Installment plans or restructuring can have separate fees or higher rates.</td>
-            <td>Setup fees, effective APR, impact on existing benefits and future flexibility.</td>
-          </tr>
+            <tr>
+              <td>Earning Structure</td>
+              <td>Base earn rate, bonus categories, caps</td>
+              <td>Determines how fast you collect with your real spending pattern.</td>
+            </tr>
+            <tr>
+              <td>Currency Type</td>
+              <td>Airline miles, hotel points or flexible bank points</td>
+              <td>Affects flexibility when plans change or partners shift.</td>
+            </tr>
+            <tr>
+              <td>Partner Network</td>
+              <td>Airline alliances, hotel chains, transfer partners</td>
+              <td>Defines how many realistic redemption options you have.</td>
+            </tr>
+            <tr>
+              <td>Fees</td>
+              <td>Annual fees, FX fees, surcharges</td>
+              <td>Collecting only makes sense if net value exceeds net cost.</td>
+            </tr>
+            <tr>
+              <td>Expiry Rules</td>
+              <td>Activity requirements, hard expiry dates</td>
+              <td>Important for slower collectors and infrequent travellers.</td>
+            </tr>
           </tbody>
         </table>
       </div>
+      <p class="small">
+        For structured comparisons of loyalty-focused and general rewards cards, visit
+        <a href="https://choose.creditcard/loyalty/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=comparison_section">
+          the Loyalty hub on Choose.Creditcard
+        </a>.
+      </p>
     </section>
 
     <!-- Cluster links -->
     <section class="section">
-      <h2>The billing, behaviour &amp; rewards cluster</h2>
-      <p class="small">
-        Collect.creditcard is part of a broader group of domains in The CreditCard Collection that explore
-        how you spend, earn rewards and manage repayment:
-      </p>
-
+      <h2>Explore Related Loyalty Topics</h2>
       <div class="cluster-grid">
         <a class="cluster-card"
-           href="https://frequent.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=frequent">
+           href="https://frequent.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=cluster_frequent">
           <h3>Frequent.Creditcard</h3>
-          <p class="small">What frequent card use does to balances, limits and risk.</p>
+          <p>Frequent flyer and frequent guest strategies for heavy collectors.</p>
         </a>
-
         <a class="cluster-card"
-           href="https://earn.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=earn">
-          <h3>Earn.Creditcard</h3>
-          <p class="small">How your spending is converted into points, miles and cashback.</p>
+           href="https://add.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=cluster_add">
+          <h3>Add.Creditcard</h3>
+          <p>When it makes sense to add another loyalty or rewards card.</p>
         </a>
-
         <a class="cluster-card"
-           href="https://benefits.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=benefits">
-          <h3>Benefits.Creditcard</h3>
-          <p class="small">Perks and extras that only make sense if you can repay sustainably.</p>
-        </a>
-
-        <a class="cluster-card"
-           href="https://member.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=member">
-          <h3>Member.Creditcard</h3>
-          <p class="small">Membership and affinity programs that influence how cards are used.</p>
-        </a>
-
-        <a class="cluster-card"
-           href="https://partners.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=partners">
+           href="https://partners.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=cluster_partners">
           <h3>Partners.Creditcard</h3>
-          <p class="small">How issuers and partners design card economics, including collections.</p>
+          <p>How issuer–airline–hotel partnerships shape earning structures.</p>
         </a>
-
         <a class="cluster-card"
-           href="https://fin.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=fin">
-          <h3>Fin.Creditcard</h3>
-          <p class="small">Overview of The CreditCard Collection and major topic clusters.</p>
+           href="https://swap.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=cluster_swap">
+          <h3>Swap.Creditcard</h3>
+          <p>Swapping into cards that collect more effectively for your pattern.</p>
+        </a>
+        <a class="cluster-card"
+           href="https://add.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=cluster_multicard">
+          <h3>Add.Creditcard</h3>
+          <p>Building a multi-card setup to cover more earning categories.</p>
         </a>
       </div>
     </section>
 
-    <!-- CTA bottom -->
+    <!-- Collection & snippet -->
     <section class="section">
-      <h2>Choosing cards that support healthy repayment</h2>
+      <h2>Part of The CreditCard Collection</h2>
       <p class="small">
-        Collect.creditcard focuses on the structural side of billing and collections. To compare concrete
-        card products – including fees, interest, autopay options and rewards – use the independent
-        comparison engine on Choose.Creditcard:
+        Collect.Creditcard is one spoke in <strong>The CreditCard Collection</strong> — a network of focused microsites
+        operated by ronarn AS. Each domain explains one concept in the card and loyalty ecosystem, then links to
+        independent comparison tools.
       </p>
-      <a class="cta"
-         href="https://choose.creditcard/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=collect_bottom">
-        Open Card Comparison on Choose.Creditcard
-      </a>
+      <p class="small">
+        This page focuses on collecting points and miles via card spend. It does not recommend specific products or give
+        personal financial advice; instead, it summarises mechanics and trade-offs described in issuer and programme
+        documentation.
+      </p>
+
+      <div class="hub-link">
+        <a href="https://choose.creditcard/loyalty/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=minisite_to_hub"
+           class="text-sm text-slate-600 hover:text-slate-900">
+          Learn more at the Loyalty hub
+        </a>
+      </div>
     </section>
 
+    <!-- Bottom CTA -->
+    <section class="section">
+      <h2>Ready to Choose Cards to Collect With?</h2>
+      <p class="small">
+        Use Collect.Creditcard to understand how collecting works – then go to the Loyalty hub to compare real cards by
+        earning rates, partners, fees and benefits.
+      </p>
+      <a class="cta"
+         href="https://choose.creditcard/loyalty/?utm_source=collect.creditcard&utm_medium=referral&utm_campaign=bottom_cta">
+        Go to the Loyalty hub
+      </a>
+    </section>
   </main>
 
-  <!-- MINI FOOTER -->
   <footer class="mini-footer">
-    <p class="mini-footer-main">
-      © 2025 The CreditCard Collection — ronarn AS
-    </p>
+    <p class="mini-footer-main">© 2025 The CreditCard Collection — ronarn AS</p>
     <p class="mini-footer-contact">
       Contact: <a href="mailto:support@cc.creditcard">support@cc.creditcard</a>
     </p>
   </footer>
-
 </body>
 </html>
